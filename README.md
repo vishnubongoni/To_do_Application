@@ -4,8 +4,7 @@ A simple, full-stack To-Do List application built with **Node.js**, **Express**,
 
 ---
 
-## 🌐 Live Demo (Optional)
-> Coming soon — deploy to [Render](https://render.com) or [Railway](https://railway.app) to share a live link!
+
 
 ---
 
@@ -28,5 +27,4 @@ A simple, full-stack To-Do List application built with **Node.js**, **Express**,
 
 ---
 
-## 📁 Project Structure
 
