@@ -25,4 +25,12 @@ app.post('/api/todos', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+// Delete a task
+app.delete('/api/todos/:id', (req, res) => {
+  let todos = JSON.parse(fs.readFileSync(todosPath));
+  const idToDelete = parseInt(req.params.id);
+  todos = todos.filter(todo => todo.id !== idToDelete);
+  fs.writeFileSync(todosPath, JSON.stringify(todos));
+  res.status(204).send();
+});
 
